@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>QR-Code-Generator</title>
+  </head>
+  <body>
+    <div class="content">
+      <h2>QRCode-Generator</h2>
+      <div class="qr-input">
+       <input type="text" name="" value="" id="ip-qrcode" placeholder="Text" style="width: 290px"><br>
+       <div>Gradient<input type="button" value="Open" onclick="toggle_color_pick2()" id="toggle_color_pick_btn"></div>
+       <div>
+          <label>Pick color 1<input type="color" id="left_color"></label>
+          <div id="sub_color" style="display: none;"><label>Pick color 2<input type="color" id="right_color"></label></div>
+       </div>
+       <div class="option">
+          <input type="number" pattern="\d*" onpaste="return false" name="" value="" placeholder="size(px)" id="size">
+         <input type="number" pattern="\d*" onpaste="return false" name="" value="" placeholder="angle(deg)" id="angle">
+          <button type="button" id="make">Generate</button>
+        </div>
+      </div>
+      <div class="" id="op-qrcode"></div>
+      <a class="hidden" id="link"></a>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="script/jquery.qrcode.min.js" charset="utf-8"></script>
+      <script src="script/qr-code.js" charset="utf-8"></script>
+    </div>
+  </body>
+</html>
